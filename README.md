@@ -4,7 +4,7 @@ This is my personal portfolio site, built with HTML and Tailwind CSS.
 
 ## 🚀 Live
 
-View the site: [https://yourusername.github.io/portfolio](https://yourusername.github.io/portfolio)
+View the site: [https://Sohil2504.github.io/portfolio](https://Sohil2504.github.io/portfolio)
 
 ## 📄 What’s Inside
 
