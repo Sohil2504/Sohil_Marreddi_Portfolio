@@ -1,0 +1,7 @@
+/* style.css */
+/* You can leave this empty for now or add overrides here */
+
+a:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
