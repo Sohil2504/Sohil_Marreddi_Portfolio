@@ -4,50 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sohil Marreddi – Cloud Engineer</title>
-        <img 
-    src="assets/Profile-fixed.jpg" 
-    alt="Profile photo" 
-     class="w-40 h-40 object-cover rounded-full mx-auto mt-6 border-4 border-gray-700 shadow-lg" />
-
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-gray-900 text-white font-sans">
-    <header class="p-6 text-center">
-      <h1 class="text-4xl font-bold">Sohil Marreddi</h1>
+
+  <body class="bg-gray-900 text-white font-sans scroll-smooth">
+
+    <!-- ✅ Navbar -->
+    <nav class="bg-gray-900 text-white py-4 sticky top-0 z-10 border-b border-gray-800">
+      <ul class="flex justify-center space-x-8 text-lg">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ✅ Header -->
+    <header class="p-6 text-center bg-gradient-to-b from-gray-800 to-gray-900">
+      <img 
+        src="assets/profile-fixed.jpg" 
+        alt="Profile photo" 
+        class="w-40 h-40 object-cover rounded-full mx-auto mt-4 border-4 border-gray-700 shadow-lg" />
+
+      <h1 class="text-4xl font-bold mt-4">Sohil Marreddi</h1>
       <p class="text-xl text-gray-400 mt-2">Aspiring Cloud Engineer</p>
     </header>
 
     <main class="max-w-3xl mx-auto px-4">
-      <section class="my-12">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p class="text-gray-300">
-          I’m a software engineer with a focus in cloud. I like to work on building reliable, scalable infrastructure. Currently building my portfolio and preparing for roles in DevOps, Cloud, or Infrastructure Engineering.
+
+      <!-- ✅ Tech Stack -->
+      <section id="stack" class="my-10 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+        <p class="text-gray-400">
+          AWS • Terraform • GitHub Actions • Docker • Linux • Python • Bash • Git
         </p>
       </section>
 
-      <section class="my-12">
-        <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-        <p class="text-gray-400 italic">Coming soon – two cloud-focused projects will be featured here.</p>
+      <!-- ✅ About Me -->
+      <section id="about" class="my-10">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p class="text-gray-300">
+          I’m a software engineer with a focus in cloud. I like to work on building reliable, scalable infrastructure.
+          Currently building my portfolio and preparing for roles in DevOps, Cloud, or Infrastructure Engineering.
+        </p>
       </section>
 
-      <section class="my-12">
-        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-        <section class="my-12 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Connect with Me</h2>
+      <!-- ✅ Projects -->
+      <section id="projects" class="my-10">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Project Card -->
+          <div class="bg-gray-800 rounded-lg p-4 shadow-md">
+            <h3 class="text-xl font-bold text-white mb-2">AWS Infrastructure as Code</h3>
+            <p class="text-gray-300 text-sm mb-3">
+              Provisioned EC2, S3, and IAM using Terraform. Implemented CI/CD with GitHub Actions.
+            </p>
+            <a href="#" class="text-blue-400 underline">View GitHub Repo</a>
+          </div>
 
-        <div class="flex justify-center space-x-6">
-        <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" class="text-blue-400 hover:underline">LinkedIn</a>
-        <a href="https://github.com/sohil2504" target="_blank" class="text-blue-400 hover:underline">GitHub</a>
-        <a href="assets/SohilMarreddi_Resume.pdf" target="_blank" class="text-blue-400 hover:underline">Resume</a>
+          <div class="bg-gray-800 rounded-lg p-4 shadow-md">
+            <h3 class="text-xl font-bold text-white mb-2">Serverless Contact API</h3>
+            <p class="text-gray-300 text-sm mb-3">
+              Built a contact form backend using AWS Lambda, API Gateway, and DynamoDB.
+            </p>
+            <a href="#" class="text-blue-400 underline">View GitHub Repo</a>
+          </div>
         </div>
       </section>
-        <p>Email me at <a href="mailto:sohilsaim@gmail.com" class="text-blue-400 underline">you@example.com</a></p>
+
+      <!-- ✅ Contact -->
+      <section id="contact" class="my-10">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+
+        <p class="mb-4">
+          Email me at <a href="mailto:sohilsaim@gmail.com" class="text-blue-400 underline">sohilsaim@gmail.com</a>
+        </p>
+
+        <div class="text-center mt-6">
+          <h3 class="text-xl font-semibold mb-3">Connect with Me</h3>
+          <div class="flex justify-center space-x-6 text-lg">
+            <a href="https://www.linkedin.com/in/sohilmarreddiswe" target="_blank" title="LinkedIn">🔗 LinkedIn</a>
+            <a href="https://github.com/sohil2504" target="_blank" title="GitHub">💻 GitHub</a>
+            <a href="assets/SohilMarreddi_Resume.pdf" target="_blank" title="Resume">📄 Resume</a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="text-center text-sm text-gray-600 mt-20 mb-6">
       © 2026 Sohil Marreddi
     </footer>
+
   </body>
 </html>
