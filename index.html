@@ -3,125 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sohil Marreddi – Cloud Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="Sohil Marreddi is building toward cloud, DevOps, and infrastructure roles through hands-on AWS, Terraform, serverless, Linux, and automation projects."
+    />
+    <title>Sohil Marreddi | Cloud and DevOps Portfolio</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="bg-gray-900 text-white font-sans scroll-smooth">
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="topbar" aria-label="Primary">
+          <a class="brand" href="index.html">SM / Portfolio</a>
 
-    <!-- ✅ Navbar -->
-    <nav class="bg-gray-900 text-white py-4 sticky top-0 z-10 border-b border-gray-800">
-      <ul class="flex justify-center space-x-8 text-lg">
-        <li><a href="#about" class="hover:text-blue-400">About</a></li>
-        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
-        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
-      </ul>
-    </nav>
+          <div class="nav-links">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="playground.html">Playground</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
 
-    <!-- ✅ Header -->
-    <header class="p-6 text-center bg-gradient-to-b from-gray-800 to-gray-900">
-      <img 
-        src="assets/Profile-fixed.jpg" 
-        alt="Profile photo" 
-        class="w-40 h-40 object-cover rounded-full mx-auto mt-4 border-4 border-gray-700 shadow-lg" />
-
-      <h1 class="text-4xl font-bold mt-4">Sohil Marreddi</h1>
-      <p class="text-xl text-gray-400 mt-2">Aspiring Cloud Engineer</p>
-    </header>
-
-    <main class="max-w-3xl mx-auto px-4">
-
-      <!-- ✅ Tech Stack -->
-      <section id="stack" class="my-10 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
-        <p class="text-gray-400">
-          AWS • Terraform • GitHub Actions • Docker • Linux • Python • Bash • Git
-        </p>
-      </section>
-
-      <!-- ✅ About Me -->
-      <section id="about" class="my-10">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p class="text-gray-300">
-          I’m a software engineer with a focus in cloud. I like to work on building reliable, scalable infrastructure.
-          Currently building my portfolio and preparing for roles in DevOps, Cloud, or Infrastructure Engineering.
-        </p>
-      </section>
-
-      <!-- ✅ Projects -->
-      <section id="projects" class="my-10">
-        <h2 class="text-2xl font-semibold mb-6 text-center">Projects</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <!-- Project Card -->
-          <div class="bg-gray-800 rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold text-white mb-2">AWS Infrastructure as Code</h3>
-            <p class="text-gray-300 text-sm mb-3">
-              Provisioned EC2, S3, and IAM using Terraform. Implemented CI/CD with GitHub Actions.
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Cloud, automation, and infrastructure</p>
+            <h1>Sohil Marreddi</h1>
+            <p class="hero-intro">
+              I&apos;m building toward DevOps, cloud, and infrastructure roles by
+              creating reliable systems, documenting what I learn, and turning
+              theory into working projects that people can actually explore.
             </p>
-            <a href="#" class="text-blue-400 underline">View GitHub Repo</a>
+
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="assets/SohilMarreddi_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                >Resume</a
+              >
+              <a
+                class="button button-secondary"
+                href="https://github.com/sohil2504"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+              <a class="button button-secondary" href="playground.html">Visit the Playground</a>
+            </div>
+
+            <div class="signal-grid">
+              <article class="signal-card">
+                <p class="card-label">Target Roles</p>
+                <h2>DevOps, cloud, infrastructure</h2>
+                <p>
+                  I&apos;m especially interested in work that combines automation,
+                  reliability, and systems thinking.
+                </p>
+              </article>
+
+              <article class="signal-card">
+                <p class="card-label">Core Stack</p>
+                <h2>AWS, Terraform, Linux, Docker</h2>
+                <p>
+                  My projects keep pulling me toward infrastructure as code,
+                  cloud services, and hands-on terminal workflows.
+                </p>
+              </article>
+
+              <article class="signal-card">
+                <p class="card-label">Working Style</p>
+                <h2>Build first, refine fast</h2>
+                <p>
+                  I learn fastest by making something real, stress-testing it,
+                  and then improving the system from there.
+                </p>
+              </article>
+            </div>
           </div>
 
-          <div class="bg-gray-800 rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold text-white mb-2">Serverless Contact API</h3>
-            <p class="text-gray-300 text-sm mb-3">
-              Built a contact form backend using AWS Lambda, API Gateway, and DynamoDB.
-            </p>
-            <a href="#" class="text-blue-400 underline">View GitHub Repo</a>
+          <div class="hero-side">
+            <figure class="profile-card">
+              <div class="profile-frame">
+                <img src="assets/Profile-fixed.jpg" alt="Portrait of Sohil Marreddi" />
+              </div>
+
+              <figcaption>
+                <p class="profile-tag">Quick Summary</p>
+                <p>
+                  Engineer focused on cloud and automation who enjoys turning
+                  complicated setup work into something cleaner, repeatable, and
+                  easier to reason about.
+                </p>
+              </figcaption>
+            </figure>
+
+            <article class="note-card">
+              <p class="note-label">For recruiters</p>
+              <h2>This page is the polished view.</h2>
+              <p>
+                The flagship projects are here. The smaller experiments, Linux
+                notes, and in-progress builds live on the separate Playground
+                page so the portfolio stays clear and easy to scan.
+              </p>
+              <time datetime="2026-04-17">Updated April 17, 2026</time>
+            </article>
           </div>
         </div>
-      </section>
+      </header>
 
-      <!-- ✅ Contact -->
-      <section id="contact" class="my-10">
-        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <main>
+        <section class="section" id="about">
+          <div class="section-heading">
+            <p class="section-tag">About Me</p>
+            <h2>I like making infrastructure feel less mysterious.</h2>
+            <p>
+              My favorite projects are the ones where I can take a messy setup,
+              automate it, and make it easier to run again with confidence. I&apos;m
+              aiming for environments where curiosity, ownership, and clean
+              execution all matter.
+            </p>
+          </div>
 
-        <p class="mb-4">
-          Email me at <a href="mailto:sohilsaim@gmail.com" class="text-blue-400 underline">sohilsaim@gmail.com</a>
-        </p>
+          <div class="about-grid">
+            <article class="story-card">
+              <div class="story-top">
+                <div>
+                  <p class="card-label">How I Think</p>
+                  <h3>Hands-on learning with systems in mind</h3>
+                </div>
+              </div>
 
-        <div class="text-center mt-6">
-          <h3 class="text-xl font-semibold mb-3">Connect with Me</h3>
-          <div class="flex flex-wrap justify-center gap-4 text-lg">
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank"
-            class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg shadow transition">
-            <i class="fab fa-linkedin fa-lg"></i>
-            <span>LinkedIn</span>
-          </a>
+              <p class="story-copy">
+                I&apos;m intentionally building the kind of portfolio I would want
+                to review myself: a small number of stronger projects on the main
+                page, backed by a second page that shows how I learn, debug, and
+                iterate in public.
+              </p>
 
-          <!-- GitHub -->
-          <a href="https://github.com/sohil2504" target="_blank"
-            class="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-5 py-2.5 rounded-lg shadow transition">
-            <i class="fab fa-github fa-lg"></i>
-            <span>GitHub</span>
-          </a>
+              <ul class="story-list">
+                <li>I care about repeatability, not just getting something to work once.</li>
+                <li>I like combining cloud services with automation and clean deployment flow.</li>
+                <li>I&apos;m spending more time in Linux and Bash so the terminal becomes a real tool, not just a requirement.</li>
+              </ul>
 
-          <!-- Resume -->
-          <a href="assets/SohilMarreddi_Resume.pdf" target="_blank"
-            class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-lg shadow transition">
-            <i class="fas fa-file-alt fa-lg"></i>
-            <span>Resume</span>
-          </a>
-        </div>
+              <p class="mini-note">
+                What that usually means in practice: infrastructure as code,
+                simple automation, safer deployments, and clearer documentation.
+              </p>
+            </article>
 
+            <article class="experiment-card accent-paper">
+              <p class="card-label">What I Bring</p>
+              <h3>Builder energy with a strong technical direction</h3>
+              <ul class="story-list">
+                <li>Comfort working across AWS, Terraform, Git, Docker, and Linux.</li>
+                <li>A habit of turning new concepts into small working systems quickly.</li>
+                <li>Clear interest in DevOps, cloud engineering, and infrastructure reliability.</li>
+                <li>A portfolio structure that separates polished work from active experimentation.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
-        </div>
-      </section>
-    </main>
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p class="section-tag">Flagship Projects</p>
+            <h2>Two projects that show how I build</h2>
+            <p>
+              These are the projects I want recruiters and hiring managers to
+              land on first. They show the bigger ideas I&apos;m most serious about:
+              repeatable infrastructure and lightweight cloud-backed systems.
+            </p>
+          </div>
 
-    <footer class="text-center text-sm text-gray-600 mt-20 mb-6">
-      © 2026 Sohil Marreddi
-    </footer>
+          <div class="flagship-grid">
+            <article class="story-card flagship-card">
+              <div class="story-top">
+                <div>
+                  <p class="card-label">Flagship Project 01</p>
+                  <h3>AWS infrastructure as code</h3>
+                </div>
 
+                <div class="chip-row" aria-label="AWS infrastructure stack">
+                  <span class="chip">AWS</span>
+                  <span class="chip">Terraform</span>
+                  <span class="chip">GitHub Actions</span>
+                </div>
+              </div>
+
+              <p class="story-copy">
+                A cloud project centered on provisioning and managing AWS
+                resources in a repeatable way instead of clicking through the
+                console manually.
+              </p>
+
+              <ul class="story-list">
+                <li>Provisioned EC2, S3, and IAM resources using Terraform.</li>
+                <li>Used GitHub Actions to make validation and change flow more consistent.</li>
+                <li>Strengthened how I think about modularity, naming, and safe infrastructure updates.</li>
+              </ul>
+
+              <p class="mini-note">
+                What it shows: infrastructure thinking, automation habits, and
+                a focus on repeatability over one-off setup.
+              </p>
+            </article>
+
+            <article class="story-card flagship-card">
+              <div class="story-top">
+                <div>
+                  <p class="card-label">Flagship Project 02</p>
+                  <h3>Serverless contact API</h3>
+                </div>
+
+                <div class="chip-row" aria-label="Serverless stack">
+                  <span class="chip">Lambda</span>
+                  <span class="chip">API Gateway</span>
+                  <span class="chip">DynamoDB</span>
+                </div>
+              </div>
+
+              <p class="story-copy">
+                A lightweight backend that turns a front-end contact form into a
+                real application flow using serverless AWS services.
+              </p>
+
+              <ul class="story-list">
+                <li>Connected API Gateway, Lambda, and DynamoDB into a simple request pipeline.</li>
+                <li>Practiced thinking about validation, handling input cleanly, and keeping the architecture lean.</li>
+                <li>Built a project that reflects both backend curiosity and practical cloud usage.</li>
+              </ul>
+
+              <p class="mini-note">
+                What it shows: backend flow, cloud integration, and the ability
+                to build small but useful systems end to end.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="playground-preview">
+          <div class="blueprint-card">
+            <div>
+              <p class="section-tag">Playground</p>
+              <h2>The smaller experiments live on their own page.</h2>
+            </div>
+
+            <div class="preview-copy">
+              <p>
+                That page is where I keep the Bash scripts, Linux notes, mini
+                utilities, and smaller experiments that show how I learn. It
+                gives hiring managers a clean main page first, then a deeper
+                look if they want to see the process behind the polished work.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="playground.html">Open the Playground</a>
+                <a class="button button-secondary" href="playground.html#experiments"
+                  >See the small builds</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="contact-card">
+            <div>
+              <p class="section-tag">Contact</p>
+              <h2>Open to cloud, DevOps, and infrastructure opportunities.</h2>
+              <p>
+                If the mix of AWS, automation, Linux, and learning-in-public
+                energy feels aligned with your team, I&apos;d love to connect.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:sohilsaim@gmail.com">Email me</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/sohil2504"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+              <a class="button button-secondary" href="playground.html">Playground</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built to show both the polished work and the curiosity behind it.</p>
+      </footer>
+    </div>
   </body>
 </html>

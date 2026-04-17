@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sohil's Playground is a living page of Bash, Linux, cloud, and mini-project experiments built while learning in public."
+    />
+    <title>Sohil&apos;s Playground | Small Projects and Experiments</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="topbar" aria-label="Primary">
+          <a class="brand" href="index.html">SM / Playground</a>
+
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="playground.html" aria-current="page">Playground</a>
+            <a href="#experiments">Shelf</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Small builds, logs, and experiments</p>
+            <h1>Sohil&apos;s Playground</h1>
+            <p class="hero-intro">
+              This is the more alive side of the portfolio. It&apos;s where I put
+              the Bash scripts, Linux practice, mini cloud experiments, and
+              small projects that help me learn faster.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#now">See today&apos;s build</a>
+              <a class="button button-secondary" href="index.html">Back to main portfolio</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/sohil2504"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+
+            <div class="signal-grid">
+              <article class="signal-card">
+                <p class="card-label">Currently Learning</p>
+                <h2>Linux and Bash scripting</h2>
+                <p>
+                  I&apos;m spending more time in the terminal so automation starts to
+                  feel natural instead of intimidating.
+                </p>
+              </article>
+
+              <article class="signal-card">
+                <p class="card-label">Mini Project Rule</p>
+                <h2>Use it immediately</h2>
+                <p>
+                  If I learn something new, I try to turn it into a tiny useful
+                  build instead of leaving it as notes only.
+                </p>
+              </article>
+
+              <article class="signal-card">
+                <p class="card-label">Why This Exists</p>
+                <h2>Show the process, not just the result</h2>
+                <p>
+                  The main page is polished on purpose. This page shows the path
+                  that gets me there.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <figure class="profile-card">
+              <div class="profile-frame">
+                <img src="assets/Profile-fixed.jpg" alt="Portrait of Sohil Marreddi" />
+              </div>
+
+              <figcaption>
+                <p class="profile-tag">Builder Mode</p>
+                <p>
+                  Cloud-minded engineer who likes turning new concepts into
+                  something visible, testable, and easy to explain.
+                </p>
+              </figcaption>
+            </figure>
+
+            <article class="note-card">
+              <p class="note-label">Current obsession</p>
+              <h2>Making the terminal feel friendly</h2>
+              <p>
+                Today&apos;s goal is to use Bash for one real automation task, learn
+                what each command is doing, and leave behind a mini project that
+                improves my own workflow.
+              </p>
+              <time datetime="2026-04-17">Updated April 17, 2026</time>
+            </article>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" id="now">
+          <div class="section-heading">
+            <p class="section-tag">Featured Experiment</p>
+            <h2>Experiment 01: Bash snapshot script</h2>
+            <p>
+              I&apos;m learning Linux and Bash by building small utilities that give
+              me immediate feedback. The goal is to make shell scripting feel
+              practical, not academic.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="story-card">
+              <div class="story-top">
+                <div>
+                  <p class="card-label">Mini Project</p>
+                  <h3><code>system-snapshot.sh</code></h3>
+                </div>
+
+                <div class="chip-row" aria-label="Featured experiment tags">
+                  <span class="chip">bash</span>
+                  <span class="chip">linux</span>
+                  <span class="chip">automation</span>
+                  <span class="chip">logging</span>
+                </div>
+              </div>
+
+              <p class="story-copy">
+                Instead of reading Bash tutorials forever, I&apos;m building a small
+                script that captures a health report for my machine and saves it
+                as a timestamped log. It&apos;s practical, repeatable, and gives me
+                a reason to combine real shell commands.
+              </p>
+
+              <div class="panel-switcher" role="tablist" aria-label="Experiment details">
+                <button class="panel-button active" data-panel-target="does" aria-pressed="true">
+                  What it does
+                </button>
+                <button class="panel-button" data-panel-target="learned" aria-pressed="false">
+                  What I learned
+                </button>
+                <button class="panel-button" data-panel-target="next" aria-pressed="false">
+                  Next version
+                </button>
+              </div>
+
+              <div class="panel-stack">
+                <div class="panel active" data-panel="does">
+                  <p>
+                    The script collects a few useful machine stats and writes
+                    them into a clean log file so I can inspect what&apos;s
+                    happening without retyping the same commands every time.
+                  </p>
+                  <ul>
+                    <li>Creates a timestamp so each run is saved as its own report.</li>
+                    <li>Captures uptime, disk usage, and the top memory-heavy processes.</li>
+                    <li>Stores everything in a <code>logs/</code> folder for later comparison.</li>
+                  </ul>
+                </div>
+
+                <div class="panel" data-panel="learned">
+                  <p>
+                    Bash started feeling less abstract once I had a real script
+                    to shape. A few concepts clicked immediately when they were
+                    attached to something useful.
+                  </p>
+                  <ul>
+                    <li><code>#!/usr/bin/env bash</code> and <code>chmod +x</code> finally felt concrete.</li>
+                    <li><code>$(...)</code> command substitution made variables much more intuitive.</li>
+                    <li>Pipes, redirects, and tools like <code>ps</code> and <code>df</code> make more sense together than in isolation.</li>
+                  </ul>
+                </div>
+
+                <div class="panel" data-panel="next">
+                  <p>
+                    Once the first version works, I want to treat it like a real
+                    mini tool instead of stopping at a one-time script.
+                  </p>
+                  <ul>
+                    <li>Add flags like <code>--quick</code> and <code>--full</code> for different report sizes.</li>
+                    <li>Archive older logs automatically so the folder stays clean.</li>
+                    <li>Eventually schedule snapshots on a timer to compare system state over time.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="code-block">
+                <pre><code>#!/usr/bin/env bash
+stamp="$(date +%Y-%m-%d_%H-%M-%S)"
+report="logs/snapshot_$stamp.txt"
+
+mkdir -p logs
+
+{
+  echo "host: $(hostname)"
+  echo "uptime: $(uptime -p)"
+  echo "disk:"
+  df -h /
+  echo "top memory processes:"
+  ps -eo comm,%mem --sort=-%mem | head -n 6
+} &gt; "$report"
+
+echo "saved report to $report"</code></pre>
+              </div>
+            </article>
+
+            <aside class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots" aria-hidden="true">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-amber"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+
+                <span class="terminal-chip">live simulation</span>
+              </div>
+
+              <p class="terminal-label">What the experiment feels like from the command line</p>
+
+              <pre class="terminal-output" id="terminal-output" aria-live="polite">$ ./system-snapshot.sh
+saved report to logs/snapshot_2026-04-17_09-14-22.txt
+
+host: sohil-mbp
+uptime: up 3 hours, 11 minutes
+disk:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/disk3s1   460G  201G  241G  46% /
+
+top memory processes:
+Google Chrome    8.2
+Slack            5.7
+Code Helper      4.9</pre>
+
+              <div class="terminal-actions">
+                <button class="terminal-button active" data-command="scan">Run snapshot</button>
+                <button class="terminal-button" data-command="archive">Archive logs</button>
+                <button class="terminal-button" data-command="notes">Open notes</button>
+              </div>
+
+              <div class="terminal-footer">
+                <p>
+                  Best part so far: tiny scripts make Linux feel less
+                  intimidating because the machine answers back immediately.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="experiments">
+          <div class="section-heading">
+            <p class="section-tag">Experiment Shelf</p>
+            <h2>A bunch of small projects, not just one</h2>
+            <p>
+              This page is meant to keep growing. Some experiments are already
+              built, some are being refined, and some are next in line.
+            </p>
+          </div>
+
+          <div class="experiment-grid">
+            <article class="experiment-card accent-coral">
+              <p class="card-label">Linux / Bash</p>
+              <h3>System snapshot script</h3>
+              <p>
+                A timestamped machine report that saves the system state so I
+                can inspect it later instead of rerunning commands manually.
+              </p>
+              <ul class="experiment-list">
+                <li>Practicing variables, command substitution, and redirects.</li>
+                <li>Learning how simple commands become much more useful together.</li>
+                <li>Next step: add flags and better log cleanup.</li>
+              </ul>
+            </article>
+
+            <article class="experiment-card accent-cyan">
+              <p class="card-label">Linux / Utility</p>
+              <h3>Disk usage watcher</h3>
+              <p>
+                A small idea for checking the biggest folders quickly so cleanup
+                becomes less annoying and more deliberate.
+              </p>
+              <ul class="experiment-list">
+                <li>Built around learning <code>du</code>, sorting, and output formatting.</li>
+                <li>Good practice for scripts that summarize noisy data.</li>
+                <li>Next step: export the results into a clean report.</li>
+              </ul>
+            </article>
+
+            <article class="experiment-card accent-paper">
+              <p class="card-label">Linux / Workflow</p>
+              <h3>Alias and dotfiles cleanup</h3>
+              <p>
+                A small quality-of-life project focused on making the terminal
+                environment feel more organized and easier to use.
+              </p>
+              <ul class="experiment-list">
+                <li>Collecting commands I actually use instead of random aliases.</li>
+                <li>Learning how shell configuration affects daily workflow.</li>
+                <li>Next step: create a cleaner reproducible setup.</li>
+              </ul>
+            </article>
+
+            <article class="experiment-card accent-cyan">
+              <p class="card-label">Cloud Lab</p>
+              <h3>Terraform scratch stacks</h3>
+              <p>
+                Small isolated infrastructure builds that help me understand AWS
+                services and Terraform structure without overcomplicating the repo.
+              </p>
+              <ul class="experiment-list">
+                <li>Useful for testing naming, modules, and environment patterns.</li>
+                <li>Lets me break things in a smaller sandbox first.</li>
+                <li>Next step: document the tradeoffs from each scratch stack.</li>
+              </ul>
+            </article>
+
+            <article class="experiment-card accent-coral">
+              <p class="card-label">Backend Spike</p>
+              <h3>Form validation flow</h3>
+              <p>
+                A smaller experiment around making input handling clearer before
+                requests reach the serverless backend.
+              </p>
+              <ul class="experiment-list">
+                <li>Focused on cleaner request flow and predictable feedback.</li>
+                <li>Useful for understanding the user-facing side of backend work.</li>
+                <li>Next step: connect validation to better front-end messaging.</li>
+              </ul>
+            </article>
+
+            <article class="experiment-card accent-paper">
+              <p class="card-label">Sandbox Idea</p>
+              <h3>Docker lab for shell practice</h3>
+              <p>
+                A contained environment where I can test commands, scripts, and
+                small automation ideas without worrying about breaking my setup.
+              </p>
+              <ul class="experiment-list">
+                <li>A safer place to practice Linux workflows more aggressively.</li>
+                <li>Could become a repeatable learning environment.</li>
+                <li>Next step: build a minimal image and routine.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="logbook">
+          <div class="section-heading">
+            <p class="section-tag">Build Log</p>
+            <h2>Notes from the process</h2>
+            <p>
+              I want the page to show movement. These quick notes keep the work
+              from feeling frozen and make the learning visible.
+            </p>
+          </div>
+
+          <div class="logbook-grid">
+            <article class="log-entry">
+              <p class="log-date">Apr 17, 2026</p>
+              <h3>Learning by automating the annoying part</h3>
+              <p>
+                Bash started clicking faster when I used it to remove repetition
+                from my own workflow instead of treating it like abstract syntax.
+              </p>
+            </article>
+
+            <article class="log-entry">
+              <p class="log-date">Current goal</p>
+              <h3>Keep the experiments visible</h3>
+              <p>
+                Every time I learn something useful, I want a small public trace
+                of it here instead of waiting for a perfect polished project.
+              </p>
+            </article>
+
+            <article class="log-entry">
+              <p class="log-date">Next up</p>
+              <h3>Schedule, compare, improve</h3>
+              <p>
+                The interesting part after a first script is iteration:
+                better output, cleanup, flags, and eventually automation on a timer.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="playbook">
+          <div class="blueprint-card">
+            <div>
+              <p class="section-tag">How This Page Works</p>
+              <h2>Every future experiment gets documented the same way</h2>
+            </div>
+
+            <div class="blueprint-grid">
+              <article>
+                <h3>1. What I built</h3>
+                <p>
+                  A small script, workflow, or cloud experiment with a clear job
+                  and a reason to exist.
+                </p>
+              </article>
+
+              <article>
+                <h3>2. What I learned</h3>
+                <p>
+                  The concept that became clearer once I used it in a real build
+                  instead of only reading about it.
+                </p>
+              </article>
+
+              <article>
+                <h3>3. What changes next</h3>
+                <p>
+                  The smarter version, cleanup pass, or follow-up experiment I
+                  want to make after the first draft proves itself.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="contact-card">
+            <div>
+              <p class="section-tag">Back To The Main View</p>
+              <h2>Want the polished overview again?</h2>
+              <p>
+                The home page is where the flagship projects and recruiter-facing
+                story live. This page is the deeper cut for anyone who wants to
+                see the smaller builds behind it.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <a class="button button-primary" href="index.html">Main portfolio</a>
+              <a class="button button-secondary" href="mailto:sohilsaim@gmail.com">Email me</a>
+              <a
+                class="button button-secondary"
+                href="assets/SohilMarreddi_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Playground page for the experiments, main page for the strongest first impression.</p>
+      </footer>
+    </div>
+
+    <script>
+      const panelButtons = document.querySelectorAll(".panel-button");
+      const panels = document.querySelectorAll(".panel");
+
+      panelButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = button.dataset.panelTarget;
+
+          panelButtons.forEach((item) => {
+            const isActive = item === button;
+            item.classList.toggle("active", isActive);
+            item.setAttribute("aria-pressed", String(isActive));
+          });
+
+          panels.forEach((panel) => {
+            panel.classList.toggle("active", panel.dataset.panel === target);
+          });
+        });
+      });
+
+      const terminalOutput = document.getElementById("terminal-output");
+      const terminalButtons = document.querySelectorAll(".terminal-button");
+      const terminalStates = {
+        scan: [
+          "$ ./system-snapshot.sh",
+          "saved report to logs/snapshot_2026-04-17_09-14-22.txt",
+          "",
+          "host: sohil-mbp",
+          "uptime: up 3 hours, 11 minutes",
+          "disk:",
+          "Filesystem      Size  Used Avail Use% Mounted on",
+          "/dev/disk3s1   460G  201G  241G  46% /",
+          "",
+          "top memory processes:",
+          "Google Chrome    8.2",
+          "Slack            5.7",
+          "Code Helper      4.9",
+        ].join("\n"),
+        archive: [
+          "$ tar -czf logs/archive_2026-04-17.tgz logs/*.txt",
+          "archived 4 reports into logs/archive_2026-04-17.tgz",
+          "",
+          "$ ls logs",
+          "archive_2026-04-17.tgz",
+          "snapshot_2026-04-16_18-03-02.txt",
+          "",
+          "next step:",
+          "add a cleanup rule so old reports do not pile up",
+        ].join("\n"),
+        notes: [
+          "$ cat notes/bash-lab.md",
+          "- practiced command substitution with $(...)",
+          "- finally understood why chmod +x matters",
+          "- using redirects feels more natural now",
+          "- next upgrade: add --quick and --full flags",
+        ].join("\n"),
+      };
+
+      terminalButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const command = button.dataset.command;
+
+          terminalButtons.forEach((item) => {
+            item.classList.toggle("active", item === button);
+          });
+
+          terminalOutput.textContent = terminalStates[command];
+        });
+      });
+    </script>
+  </body>
+</html>
